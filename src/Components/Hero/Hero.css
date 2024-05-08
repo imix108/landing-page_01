@@ -1,0 +1,56 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(42, 40, 43, 0.7), rgba(42, 40, 43, 0.7)), url('../../assets/hero1.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text{
+    text-align: center;
+    max-width: 1000px;
+}
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.hero-text p{
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+}
+
+.padlock-icon{
+    width: 70px;
+    animation: sway 2s infinite alternate ease-in-out;
+    transform-origin: center;
+    cursor: pointer;
+}
+
+@keyframes sway {
+    0%, 100% { transform: rotate(0deg) translateX(0); }
+    25% { transform: rotate(5deg) translateX(3px); }
+    50% { transform: rotate(0deg) translateX(0); }
+    75% { transform: rotate(-5deg) translateX(-3px); }
+}
+/* ---------------media query--------------- */
+
+@media (max-width: 850px){
+    .hero-text h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 650px){
+    .hero-text h1{
+        font-size: 30px;
+        max-width: 400px;
+        margin: auto;
+    }
+    .hero-text p{
+        font-size: 14px;
+        margin: 15
+    }
+}

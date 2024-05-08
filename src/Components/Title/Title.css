@@ -1,0 +1,32 @@
+.title {
+    text-align: center;
+    color: #026842;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 70px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h2{
+    font-size: 32px;
+    color: #000F38;
+    margin-top: 5px;
+    text-transform: none;
+}
+.title-icon {
+    margin-right: 10px;
+
+     /* Расстояние между иконкой и текстом */
+}
+.title-icon img {
+    width: 70px; /* Уменьшаем ширину иконки */
+    height: auto; /* Поддерживаем пропорциональное изменение высоты */
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column; /* По умолчанию текст будет располагаться вертикально */
+}
