@@ -17,6 +17,7 @@ const App = () => {
               <Title subTitle='My SERVICES' title='What I Teach' />
               <Services />
               <About />
+              <Title subTitle='My RATES' title='Pricing' />
               <PricingTable />
               <Title subTitle='Contact Me' title='Get In Touch' icon={unlock_icon} />
               <Contact />
