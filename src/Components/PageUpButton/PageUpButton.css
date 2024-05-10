@@ -17,13 +17,17 @@
     background-color: #0e6c65;
   }
   
-  .arrow {
+  /* .arrow {
     width: 20px;
     height: 20px;
     border-top: 3px solid white;
     border-right: 3px solid white;
     transform: rotate(-45deg);
     animation: arrowBounce 1s infinite alternate;
+  } */
+  .scroll-text {
+    color: aliceblue;
+    font-size: large;
   }
   
   @keyframes arrowBounce {

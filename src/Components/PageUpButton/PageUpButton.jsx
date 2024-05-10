@@ -34,7 +34,8 @@ const PageUpButton = () => {
       style={springStyles}
       onClick={handlePageUp}
     >
-      <div className="arrow" />
+      <p className='scroll-text'>UP</p>
+
     </animated.button>
   );
 };
