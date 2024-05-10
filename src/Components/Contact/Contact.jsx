@@ -42,7 +42,7 @@ const Contact = () => {
         <ul>
             <li> <img src={mail_icon} alt="" />info@teacher.com</li>
             <li> <img src={phone_icon} alt="" />+38-099-999-00-99</li>
-            <li><img src={location_icon} alt="" />Crimea</li>
+            <li><img src={location_icon} alt="" />Location</li>
            
         </ul>
      </div>
