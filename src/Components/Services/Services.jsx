@@ -92,19 +92,19 @@ const Services = () => {
                 </div>
             )}
             <div className="service" onClick={() => openModal('General English')}>
-                <p className='service-name'>General English</p>
+                <p>General English</p>
                 <img src={service_1} alt="" />
             </div>
             <div className="service" onClick={() => openModal('Business English')}>
-                <p className='service-name'>Business English</p>
+                <p>Business English</p>
                 <img src={service_2} alt="" />
             </div>
             <div className="service" onClick={() => openModal('IELTS preparation')}>
-                <p className='service-name'>IELTS preparation</p>
+                <p>IELTS preparation</p>
                 <img src={service_3} alt="" />
             </div>
             <div className="service" onClick={() => openModal('FCE/CAE preparation')}>
-                <p className='service-name'>FCE/CAE </p>
+                <p>FCE/CAE </p>
                 <img src={service_4} alt="" />
             </div>
         </div>
