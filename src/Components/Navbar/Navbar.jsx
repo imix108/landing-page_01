@@ -30,7 +30,13 @@ const Navbar = () => {
       setMobileMenu(false);
     }
   };
-
+ const handleHomeClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    setMobileMenu(false); // Закрываем меню после клика на иконку
+  };
   // Функция для закрытия меню при клике на элементе меню и переходе
   const handleMenuClick = () => {
     setMobileMenu(false);
@@ -38,7 +44,7 @@ const Navbar = () => {
 
   return (
     <nav ref={navbarRef} className={`container ${sticky ? 'dark-nav' : ''}`}>
-      <img src={logo} alt="" className='logo' />
+      <img src={logo} alt="" className='logo' onClick={handleHomeClick} />
       
       <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
         <li><Link to='hero' smooth={true} offset={0} duration={500} onClick={handleMenuClick}>Home</Link></li>

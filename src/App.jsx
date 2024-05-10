@@ -7,6 +7,7 @@ import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import PricingTable from './Components/Pricing/Pricing'
 import unlock_icon from './assets/unlock-icon.png'
+import PageUpButton from './Components/PageUpButton/PageUpButton'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
               <Contact />
               <Footer />
           </div>
+          <PageUpButton /> {/* Вставляем кнопку "Page Up" */}
       </div>
   )
 }

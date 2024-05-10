@@ -13,8 +13,11 @@ z-index: 10;
 }
 
 .logo{
-    width: 80px;
-    
+    width: 80px;  
+}
+
+.logo:hover{
+    width: 90px;
 }
 
 nav ul li{
