@@ -30,12 +30,12 @@
     font-size: large;
   }
   
-  @keyframes arrowBounce {
+  /* @keyframes arrowBounce {
     from {
       transform: translateY(0);
     }
     to {
       transform: translateY(-5px);
     }
-  }
+  } */
   

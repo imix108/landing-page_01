@@ -2,7 +2,6 @@
   margin: 60px auto;
   width: 90%;
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   gap: 20px;
   cursor: pointer;
@@ -17,15 +16,14 @@
 .service {
   flex-basis: 31%;
   position: relative;
-  
 }
 
-.service-name{
-    font-size: large;
-    
+.service-name {
+  font-size: large;
 }
-.service:hover, service:focus {
-font-size: large;
+
+.service:hover, .service:focus {
+  font-size: large;
 }
 
 .caption {
@@ -56,44 +54,53 @@ font-size: large;
   opacity: 1;
   padding-top: 0;
 }
-/* ----------------modal----------------- */
-.modal {
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal-content {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 60%;
-    max-height: 90%;
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
-    position: relative;
-  }
-  
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    color: #666;
-  }
-  
-  .close:hover {
-    color: #000;
-  }
 
-/* -------------media query--------------- */
+/* Modal */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 60%;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #666;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.modal-layout {
+  margin: 30px 30px;
+}
+
+.ielts .short-text,
+.general-eng .short-text,
+.business-eng .short-text {
+  display: none;
+}
 
 @media (max-width: 650px) {
   .services {
@@ -101,6 +108,58 @@ font-size: large;
   }
   .service {
     flex-basis: 100%;
-    margin: 20px;
+    margin: 20px 0;
+  }
+  .ielts .short-text,
+  .general-eng .short-text,
+  .business-eng .short-text {
+    display: none;
+  }
+  .ielts .full-text,
+  .general-eng .full-text,
+  .business-eng .full-text {
+    display: inline;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 912px) {
+  .ielts .full-text {
+    display: none;
+  }
+  .ielts .short-text {
+    display: inline;
+  }
+  .general-eng .full-text {
+    display: inline;
+  }
+  .general-eng .short-text {
+    display: none;
+  }
+  .business-eng .full-text {
+    display: inline;
+  }
+  .business-eng .short-text {
+    display: none;
+  }
+}
+
+@media (min-width: 913px) {
+  .ielts .full-text {
+    display: inline;
+  }
+  .ielts .short-text {
+    display: none;
+  }
+  .general-eng .full-text {
+    display: inline;
+  }
+  .general-eng .short-text {
+    display: none;
+  }
+  .business-eng .full-text {
+    display: inline;
+  }
+  .business-eng .short-text {
+    display: none;
   }
 }

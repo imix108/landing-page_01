@@ -9,10 +9,12 @@ import PricingTable from './Components/Pricing/Pricing'
 import unlock_icon from './assets/unlock-icon.png'
 import PageUpButton from './Components/PageUpButton/PageUpButton'
 
+
 const App = () => {
   return (
       <div>
           <Navbar />
+         
           <Hero />
           <div className="container">
               <Title subTitle='My SERVICES' title='What I Teach' />

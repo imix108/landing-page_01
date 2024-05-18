@@ -37,29 +37,27 @@ const PricingTable = () => {
 
   return (
     <div className='pricing'>
-      <h2></h2>
-    
-
+   
       <div>
-        <label htmlFor="course">Choose the name of the course:</label>
-        <select id="course" value={course} onChange={handleCourseChange}>
-          <option value="General English">General English</option>
-          <option value="Business English">Business English</option>
-          <option value="Exam Preparation">Exam Preparation</option>
+        <label htmlFor="course" className='course-label'>Choose the name of the course:</label>
+        <select id="course" className='select-course'value={course} onChange={handleCourseChange}>
+          <option value="General English" className='options'>General English</option>
+          <option value="Business English"className='options'>Business English</option>
+          <option value="Exam Preparation"className='options'>Exam Preparation</option>
         </select>
       </div>
 
       <div>
-        <label htmlFor="duration">Choose the duration of the lesson:</label>
-        <select id="duration" value={duration} onChange={handleDurationChange}>
-          <option value="45">45 min</option>
-          <option value="60">60 min</option>
+        <label htmlFor="duration" className='duration-label'>Choose the duration of the lesson:</label>
+        <select id="duration"className='select-duration' value={duration} onChange={handleDurationChange}>
+          <option value="45"className='options'>45 min</option>
+          <option value="60"className='options'>60 min</option>
         </select>
       </div>
 
       <div>
-        <label htmlFor="price"> RATE (Euro):</label>
-        <input type="text" id="price" value={price} readOnly />
+        <label htmlFor="price" className='price-label'> RATE (Euro):</label>
+        <input type="text" className='price-input'id="price" value={price} readOnly />
       </div>
     </div>
   );
